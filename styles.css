@@ -22,7 +22,7 @@ h1{font-size:40px;line-height:1.15;margin:.5rem 0 1rem}
 }
 .btn.ghost:hover{
   background: var(--accent);
-  color: #0a0a0a; /* same text tone as solid button */
+  color: #0a0a0a; 
 }
 .section{margin-top:48px}
 h2{font-size:26px;margin:0 0 14px}
@@ -62,7 +62,7 @@ h2{font-size:26px;margin:0 0 14px}
 .contact a:hover .fa-github{   color:#ffffff; }
 .contact a:hover .fa-linkedin{ color:#0a66c2; }
 
-/* === Projects: list styling inside cards === */
+
 #projects .card ul{
   margin: 10px 0 0 18px;
   padding: 0;
@@ -73,7 +73,7 @@ h2{font-size:26px;margin:0 0 14px}
   color: var(--muted);
 }
 
-/* === Projects: enhanced card styling === */
+
 #projects .card {
   background: linear-gradient(145deg, #111118, #0d0d13);
   border: 1px solid #2a2a35;
@@ -96,7 +96,7 @@ h2{font-size:26px;margin:0 0 14px}
   line-height: 1.4;
 }
 
-/* === Badges: responsive grid and hover === */
+
 #badges .grid{
   grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
   gap: 12px;
@@ -116,31 +116,31 @@ h2{font-size:26px;margin:0 0 14px}
   box-shadow: 0 6px 18px rgba(0,0,0,.25);
 }
 
-/* === Certificates: flexible cards layout === */
+
 #certificates .grid{
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
 }
 
-/* === CV section tweaks === */
+
 #cv .btn{ margin-top: 8px; }
-/* === Projects: fiksiraj 3 kolone na sirokim ekranima === */
+
 #projects .grid { gap: 24px; }
 
-/* 3 kolone na velikim ekranima */
+
 @media (min-width: 1024px) {
   #projects .grid { grid-template-columns: repeat(3, 1fr); }
 }
 
-/* 2 kolone na srednjim */
+
 @media (min-width: 640px) and (max-width: 1023px) {
   #projects .grid { grid-template-columns: repeat(2, 1fr); }
 }
 
-/* 1 kolona na malim */
+
 @media (max-width: 639px) {
   #projects .grid { grid-template-columns: 1fr; }
 }
-/* === Projects: fiksiraj 3 kolone na desktopu (override) === */
+
 #projects.section .grid,
 .section#projects .grid,
 #projects .grid {
@@ -148,21 +148,21 @@ h2{font-size:26px;margin:0 0 14px}
   gap: 24px !important;
 }
 
-/* Responsivni lomovi */
+
 @media (max-width: 1023px) {
   #projects .grid { grid-template-columns: repeat(2, 1fr) !important; }
 }
 @media (max-width: 639px) {
   #projects .grid { grid-template-columns: 1fr !important; }
 }
-/* === All Projects list styling === */
+
 .project-list{ margin-top: 32px; }
 .project-list h2{ margin-bottom: 12px; }
 .project-list ul{
   list-style: none;
   padding: 0;
   margin: 0;
-  columns: 2;              /* two columns on desktop */
+  columns: 2;              
   column-gap: 40px;
 }
 .project-list li{
@@ -181,7 +181,7 @@ h2{font-size:26px;margin:0 0 14px}
   top: 0;
   color: var(--accent);
 }
-/* single column on small screens */
+
 @media (max-width: 700px){
   .project-list ul{ columns: 1; }
 }
