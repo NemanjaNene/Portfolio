@@ -1,43 +1,33 @@
-# Portfolio Starter
+# Nemanja Nikitovic • Portfolio
 
-A minimal, clean HTML/CSS starter for a personal portfolio. No frameworks, no build step.
+Welcome to my personal portfolio!  
+Here you can find an overview of my skills, experience, and projects in **QA testing** and **frontend development**.
 
-## How to use
-1. Edit `index.html` and `styles.css` with your info.
-2. Open `index.html` in your browser to preview.
+## 🚀 About Me
 
-## Deploy options
+- QA Engineer with experience in manual and automated testing
+- Tools: **Cypress, Selenium, JMeter, Screaming Frog, Jira, TestRail, Asana**
+- Frontend enthusiast – currently learning **HTML, CSS, JavaScript, and React**
+- Combining testing and development to create high-quality and functional solutions
 
-### A) GitHub Pages (fastest)
-1. Create a repo on GitHub, e.g. `nemanja-portfolio`.
-2. Push these files (see commands below).
-3. In the repo: Settings → Pages → Build and deployment → Source: **Deploy from a branch**.
-4. Select branch: **main** and folder: **/(root)**, then **Save**.
-5. Your site will be available at `https://<your-username>.github.io/<repo-name>/`.
+## 📂 Project Structure
 
-### B) Netlify
-- Drag-and-drop the folder on https://app.netlify.com/drop or connect the Git repo.
-- Netlify auto-deploys on each push.
+- `index.html` – main portfolio page
+- `styles.css` – styles for the site
+- `assets/` – images, icons, and my CV in PDF format
 
-### C) Vercel
-- Import your GitHub repo at https://vercel.com/new and deploy. No config needed for static sites.
+## 📑 Portfolio Content
 
-## Git commands (first time)
+- **QA Projects** – FairPlay, RAZ, Madridista India
+- **Automation** – Cypress and Selenium test examples
+- **Frontend Work** – personal project _Gym_site_ (HTML & CSS), this portfolio website
 
-```bash
-git init
-git add .
-git commit -m "Initial portfolio"
-git branch -M main
-git remote add origin https://github.com/<your-username>/<repo-name>.git
-git push -u origin main
-```
+## 🌍 Live Demo
 
-## Update later
-Edit files and commit again:
-```bash
-git add -A
-git commit -m "Update content"
-git push
-```
+👉 [Check out my portfolio here](https://nemanjanene.github.io/Portfolio/)
 
+## 📬 Contact
+
+- 📧 Email: nemanjanikitovic1@gmail.com
+- 💼 LinkedIn: [Nemanja Nikitovic](https://www.linkedin.com/in/...)
+- 🐙 GitHub: [NemanjaNene](https://github.com/NemanjaNene)
