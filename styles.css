@@ -1,0 +1,187 @@
+*{box-sizing:border-box}html,body{margin:0;padding:0}
+:root{--bg:#0b0b10;--panel:#12121a;--accent:#7dd3fc;--text:#e5e7eb;--muted:#9ca3af;--chip:#d1fae5}
+body{font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:var(--bg);color:var(--text)}
+.container{width:min(1100px,92%);margin-inline:auto}
+.site-header{position:sticky;top:0;background:rgba(11,11,16,.75);backdrop-filter:saturate(160%) blur(6px);border-bottom:1px solid #1f2937}
+.nav{display:flex;align-items:center;justify-content:space-between;padding:14px 0}
+.brand{font-weight:800;font-size:20px;letter-spacing:.5px}
+.dot{display:inline-block;width:8px;height:8px;background:var(--accent);border-radius:9999px;margin-left:6px}
+.links a{color:var(--text);text-decoration:none;margin-left:18px;font-weight:600;opacity:.9}
+.links .cta{padding:.4rem .8rem;border:1px solid #334155;border-radius:9999px}
+.page{padding:36px 0 64px}
+.hero{padding:56px 0}
+.eyebrow{display:inline-block;font-size:12px;letter-spacing:.16em;color:var(--muted);text-transform:uppercase}
+h1{font-size:40px;line-height:1.15;margin:.5rem 0 1rem}
+.sub{color:var(--muted);max-width:70ch}
+.actions{margin-top:20px;display:flex;gap:12px}
+.btn{display:inline-block;background:var(--accent);color:#0a0a0a;padding:.7rem 1rem;border-radius:12px;text-decoration:none;font-weight:700}
+.btn.ghost{
+  background: transparent;
+  border: 1px solid var(--accent);
+  color: var(--accent);
+}
+.btn.ghost:hover{
+  background: var(--accent);
+  color: #0a0a0a; /* same text tone as solid button */
+}
+.section{margin-top:48px}
+h2{font-size:26px;margin:0 0 14px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.card{background:var(--panel);border:1px solid #1f2937;border-radius:16px;padding:16px}
+.card h3{margin:0 0 6px}
+.card .meta{display:flex;gap:12px;flex-wrap:wrap;color:var(--muted);font-size:14px;padding:0;margin:10px 0 0;list-style:none}
+.timeline .item{padding:14px 0;border-bottom:1px dashed #1f2937}
+.timeline .item:last-child{border-bottom:none}
+.timeline .when{color:var(--muted);font-size:14px}
+.tags{display:flex;flex-wrap:wrap;gap:10px;padding:0;margin:0;list-style:none}
+.tags li{background:#0f172a;border:1px solid #1f2937;padding:.5rem .7rem;border-radius:9999px}
+.contact{list-style:none;padding:0;margin:0;display:flex;gap:16px;flex-wrap:wrap}
+.site-footer{border-top:1px solid #1f2937;padding:24px 0;margin-top:56px;color:var(--muted);text-align:center}
+@media (max-width:900px){.grid{grid-template-columns:1fr 1fr}}
+@media (max-width:640px){.grid{grid-template-columns:1fr} h1{font-size:32px}}
+
+.contact li{ margin: 8px 0; }
+.contact a{
+  text-decoration: none;
+  font-size: 1.05rem;
+  color: var(--text);            
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  opacity: 0.95;
+  transition: color .2s ease, opacity .2s ease;
+}
+.contact a:hover{ color:#fff; opacity:1; }
+.contact i{
+  font-size: 1.25rem;
+  line-height: 1;
+  color: var(--text);            
+  transition: color .2s ease, transform .2s ease;
+}
+.contact a:hover .fa-envelope{ color:#d93025; }
+.contact a:hover .fa-github{   color:#ffffff; }
+.contact a:hover .fa-linkedin{ color:#0a66c2; }
+
+/* === Projects: list styling inside cards === */
+#projects .card ul{
+  margin: 10px 0 0 18px;
+  padding: 0;
+}
+
+#projects .card ul li{
+  margin: 6px 0;
+  color: var(--muted);
+}
+
+/* === Projects: enhanced card styling === */
+#projects .card {
+  background: linear-gradient(145deg, #111118, #0d0d13);
+  border: 1px solid #2a2a35;
+  border-radius: 20px;
+  padding: 20px;
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+#projects .card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0,0,0,.35);
+}
+#projects .card h3 {
+  font-size: 1.2rem;
+  color: var(--accent);
+}
+#projects .card ul li {
+  margin: 6px 0;
+  color: var(--muted);
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+/* === Badges: responsive grid and hover === */
+#badges .grid{
+  grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
+  gap: 12px;
+}
+#badges .grid img{
+  width: 100%;
+  height: auto;
+  background: #0f172a;
+  border: 1px solid #1f2937;
+  border-radius: 12px;
+  padding: 10px;
+  object-fit: contain;
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+#badges .grid img:hover{
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(0,0,0,.25);
+}
+
+/* === Certificates: flexible cards layout === */
+#certificates .grid{
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
+/* === CV section tweaks === */
+#cv .btn{ margin-top: 8px; }
+/* === Projects: fiksiraj 3 kolone na sirokim ekranima === */
+#projects .grid { gap: 24px; }
+
+/* 3 kolone na velikim ekranima */
+@media (min-width: 1024px) {
+  #projects .grid { grid-template-columns: repeat(3, 1fr); }
+}
+
+/* 2 kolone na srednjim */
+@media (min-width: 640px) and (max-width: 1023px) {
+  #projects .grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+/* 1 kolona na malim */
+@media (max-width: 639px) {
+  #projects .grid { grid-template-columns: 1fr; }
+}
+/* === Projects: fiksiraj 3 kolone na desktopu (override) === */
+#projects.section .grid,
+.section#projects .grid,
+#projects .grid {
+  grid-template-columns: repeat(3, 1fr) !important;
+  gap: 24px !important;
+}
+
+/* Responsivni lomovi */
+@media (max-width: 1023px) {
+  #projects .grid { grid-template-columns: repeat(2, 1fr) !important; }
+}
+@media (max-width: 639px) {
+  #projects .grid { grid-template-columns: 1fr !important; }
+}
+/* === All Projects list styling === */
+.project-list{ margin-top: 32px; }
+.project-list h2{ margin-bottom: 12px; }
+.project-list ul{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  columns: 2;              /* two columns on desktop */
+  column-gap: 40px;
+}
+.project-list li{
+  break-inside: avoid;
+  position: relative;
+  padding-left: 18px;
+  line-height: 1.6;
+  margin: 6px 0;
+  color: var(--text);
+  opacity: .95;
+}
+.project-list li::before{
+  content: "•";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: var(--accent);
+}
+/* single column on small screens */
+@media (max-width: 700px){
+  .project-list ul{ columns: 1; }
+}
