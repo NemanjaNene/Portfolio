@@ -1,128 +1,27 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Nemanja Nikitovic • QA & Frontend</title>
-  <meta name="description" content="Portfolio: QA engineer focused on manual & automated testing (Cypress, Selenium), budding frontend dev." />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-</head>
-<body>
-  <header class="site-header">
-    <div class="container nav">
-      <div class="brand">Nemanja Nikitovic<span class="dot"></span></div>
-      <nav class="links">
-        <a href="#home">Home</a>
-        <a href="#experience">Experience</a>
-        <a href="#skills">Skills</a>
-        <a href="#certificates">Certificates</a>
-        <a href="#cv">CV</a>
-        <a href="#contact" class="cta">Contact</a>
-        <a href="projects.html">Projects</a>
-      </nav>
-    </div>
-  </header>
+.nav{
+  display:flex;
+  align-items:center;
+  gap:12px;
+  flex-wrap:wrap;
+  padding:14px 0;
+}
 
-  <main class="container page">
-    <!-- HERO -->
-    <section class="hero" id="home">
-      <div class="wrap">
-        <span class="eyebrow">• QA Manual and Automation Engineer •</span>
-        <br>
-        <span class="eyebrow">• Junior Frontend Developer •</span>
-        <h1>QA professional mastering both manual precision and automation efficiency</h1>
-        <p class="sub">Manual & automated testing (Cypress, Selenium, JMeter and SEO Testing). Currently building a fitness‑themed frontend project while keeping quality first.</p>
-        <div class="actions">
-          <a href="projects.html" class="btn">See projects</a>
-          <a href="#contact" class="btn ghost">Get in touch</a>
-        </div>
-      </div>
-    </section>
+.links{
+  display:flex;
+  align-items:center;
+  flex-wrap:wrap;
+  gap:10px 16px;
+  order: 1;
+  margin-left:auto; /* gura linkove skroz desno */
+  justify-content:flex-end;
+}
 
-    <!-- EXPERIENCE -->
-    <section id="experience" class="section">
-      <h2>Experience</h2>
-      <div class="timeline">
-        <div class="item">
-          <div class="when">2025 — Present</div>
-          <div class="what"><strong>QA Engineer</strong> at Comit International</div>
-          <p>- Executed 200+ manual test cases for web & mobile
-            <br>- Developed and maintained 20+ automated tests (Cypress & Selenium)
-            <br>- Performed smoke & regression before releases
-            <br>- Reported 500+ bugs and synced closely with devs
-            <br>- Conducted SEO audits with Screaming Frog
-            <br>- Worked within Agile ceremonies (planning, grooming, retro)
-          </p>
-        </div>
-        <div class="item">
-          <div class="when">2023 — 2025</div>
-          <div class="what"><strong>Freelance QA Tester</strong> at Test IO</div>
-          <p>- Completed 300+ crowdtesting tasks across platforms
-            <br>- Wrote clear test cases & bug reports with strong repro steps
-            <br>- Black‑box, cross‑browser and UI/UX testing
-            <br>- Logged defects with severity/priority using structured templates
-          </p>
-        </div>
-      </div>
-    </section>
-
-    
-    <section id="certificates" class="section">
-      <h2>Certificates</h2>
-      <div class="grid">
-        <article class="card">
-          <h3>Certified Software Tester</h3>
-          <p><strong>Provider:</strong> ITAcademy (LinkGroup)</p>
-          <p><strong>Issued:</strong> Oct 2024 &nbsp;•&nbsp; <strong>Certificate ID:</strong> 032801</p>
-          <p>QA fundamentals, test plans/cases, defect identification; basics of Selenium automation; API testing with Postman; performance testing with JMeter; ISTQB core principles.</p>
-        </article>
-        <article class="card">
-          <h3>Selenium WebDriver with Java Frameworks</h3>
-          <p><strong>Provider:</strong> Udemy Academy</p>
-          <p><strong>Issued:</strong> Aug 2024 &nbsp;•&nbsp; <strong>Certification ID:</strong> UC-3760fa8e-3797-447c-bde2-91ae3832bc56</p>
-          <p>E2E automation with Selenium; XPath/CSS; TestNG; Page Object Model; basics of CI/CD (Jenkins, GitHub).</p>
-        </article>
-      </div>
-    </section>
-
-    
-    <section id="skills" class="section">
-      <h2>Skills</h2>
-      <ul class="tags">
-        <li>Manual QA</li><li>Automation Testing</li><li>SEO Testing</li><li>Test Cases & Bug Reports</li>
-        <li>Selenium</li><li>TestNG</li><li>Cypress</li><li>JMeter</li>
-        <li>HTML/CSS</li><li>API Testing</li><li>Git & GitHub</li>
-      </ul>
-    </section>
-
-    <!-- CV -->
-    <section id="cv" class="section">
-      <h2>CV</h2>
-      <p>You can download my latest resume here:</p>
-      <p><a class="btn" href="assets/cv/NEMANJA-NIKITOVIC-FlowCV-Resume-20250805.pdf" download>Download CV (PDF)</a></p>
-      
-    </section>
-
-    
-    <section id="contact" class="section">
-      <h2>Contact</h2>
-      <p>Open to collaboration, feedback, and QA roles. Feel free to reach out.</p>
-      <ul class="contact">
-        <li><a href="mailto:nemanjanikitovic1@gmail.com"><i class="fa-solid fa-envelope"></i> Email</a></li>
-        <li><a href="https://github.com/NemanjaNene" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> GitHub</a></li>
-        <li><a href="https://www.linkedin.com/in/nemanja-nikitovic-576a252a3/" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin"></i> LinkedIn</a></li>
-      </ul>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <div class="container">
-      <p>© 2025 Nemanja Nikitovic. Built with HTML & CSS.</p>
-    </div>
-  </footer>
-</body>
-</html>
+@media (min-width: 721px){
+  .nav{ flex-wrap: nowrap; }
+  .brand{ flex: 0 0 auto; }
+  .links{
+    flex: 0 0 auto;
+    margin-left:auto;      /* osigurava desnu ivicu */
+    justify-content:flex-end;
+  }
+}
